@@ -1,3 +1,7 @@
+* {
+  border: solid red 1px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -45,6 +49,11 @@ footer {
 
 .description {
   white-space: pre-wrap;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .time-block {

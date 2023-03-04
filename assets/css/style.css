@@ -6,7 +6,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-
 }
 
 textarea {
@@ -51,12 +50,6 @@ footer {
   white-space: pre-wrap;
 }
 
-.list-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .time-block {
   text-align: center;
   border-radius: 15px;
@@ -74,6 +67,7 @@ footer {
   color: #000000;
   border-top: 1px dashed #000000;
   width: 10%;
+  padding: 20px;
 }
 
 .past {
@@ -104,3 +98,13 @@ footer {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.list-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* ID for each row */ 
+
+

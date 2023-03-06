@@ -23,18 +23,15 @@ colourRow = () => {
 colourRow()
 
 // Saving to local storage
-
-let textArea = localStorage.getItem('User input')
-console.log('text area variable:', textArea)
 let saveButtonEl = document.querySelectorAll('.saveBtn')
 
 for (let i = 0; i < saveButtonEl.length; i++) {
     // console.log(saveButton[i])
     saveButtonEl[i].addEventListener('click', function() {
-
+        localStorage.getItem('User input')
         console.log('test', this.previousSibling.children[0].value)
         localStorage.setItem('User input', this.previousSibling.children[0].value)
-
+        
     }
     )
 }

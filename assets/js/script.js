@@ -1,54 +1,41 @@
+let currentHour = moment().hour();
+console.log(`The current hour is ${currentHour}`);
 
-let containerEl = $('.container');
-let saveButton = $('<button class="saveBtn"></button>');
-let timeArray = [
-    nineAM = 9,
-    tenAM = 10,
-    elevenAM = 11,
-    twelvePM = 12,
-    onePM = 13,
-    twoPM = 14,
-    threePM = 15,
-    fourPM = 16,
-    fivePM = 17,
-]
-
-console.log(timeArray[2])
-
-
+// Adding current time to jumbotron
 let currentDate = moment();
 $(document).ready(function () {
     $('#currentDay').text(currentDate.format('Do MMMM YYYY, H:mm'));
 });
 
-// adding colour to rows 
+// Adding colour to row based on current hour
 colourRow = () => {
-    for (let i = 0; i < timeArray.length; i++) {
-        if (moment().hour() > timeArray[0]) {
-            $('.row').addClass('past');
-        } else if (moment().hour() === timeArray[0]) {
-            $('.row').addClass('present');
+    let listElements = document.querySelectorAll('.list-group-item')
+    for (let i = 0; i < listElements.length; i++) {
+        if (currentHour > parseInt(listElements[i].id)) {
+            listElements[i].classList.add('past');
+        } else if (currentHour === parseInt(listElements[i].id)) {
+            listElements[i].classList.add('present');
         } else {
-            $('.row').addClass('future');
+            listElements[i].classList.add('future');
         }
     }
 }
 colourRow()
 
+// Saving to local storage
+let textArea = localStorage.getItem('textArea')
+let saveButton = document.querySelectorAll('.saveBtn')
 
-console.log(`The current hour is ${moment().hour()}`);
-// to get current hour (returns in military time e.g. 13:00)
+for (let i = 0; i < saveButton.length; i++) {
+    // console.log(saveButton[i])
+    saveButton[i].addEventListener('click', function() {
+        console.log(this.previousSibling.children[0].value)
+        // save this.previousSibling.children[0].value to local storage
+    }
+    
+    )
+}
 
 // local storage set item and get item 
-// toggle
-// current hour 
-// differentiate rows / timeblocks with IDs
 // how to add classes to elements with Jquery 
 // Save entered text in local storage 'on.click' - saveBtn
-// background colour 
-
-
-
-// if time in row = moment().hour() time. then add class .present to row ID
-// else if time > moment().hour() time then add class .future to row ID
-// else add class .past to row

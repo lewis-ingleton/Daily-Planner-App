@@ -105,6 +105,10 @@ footer {
   flex-wrap: wrap;
 }
 
-/* ID for each row */ 
+.blocks {
+  display: flex;
+  width: 100%;
+
+}
 
 

@@ -18,6 +18,8 @@ At the end of each day (midnight) the local storage and existing text will clear
 ## Applications used
 I have used the moment.js API to display the current date and time to the user. This API is the main component of the functionality of this webpage, which I have described in the previous section. 
 
+## Final screenshot
+
 ![Lewis Ingleton's work day scheduler](https://github.com/lewis-ingleton/Daily-Planner-App/blob/main/assets/screenshot/daily-planner-screenshot.png?raw=true)
 
 

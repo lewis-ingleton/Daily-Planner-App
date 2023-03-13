@@ -1,4 +1,4 @@
-# Daily-Planner-App
+# Work day scheduler
 https://lewis-ingleton.github.io/Daily-Planner-App/ 
 
 ## What is this?

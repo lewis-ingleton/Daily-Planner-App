@@ -18,6 +18,7 @@ At the end of each day (midnight) the local storage and existing text will clear
 ## Applications used
 I have used the moment.js API to display the current date and time to the user. This API is the main component of the functionality of this webpage, which I have described in the previous section. 
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 
 

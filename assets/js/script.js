@@ -39,5 +39,11 @@ function renderUserTextInput() {
         document.getElementById([i]).children[0].value = userInput;
     }
 }
-
 renderUserTextInput()
+
+function clearLocalStorage() {
+    if (currentHour === '0') {
+        localStorage.clear()
+    }
+}
+clearLocalStorage()

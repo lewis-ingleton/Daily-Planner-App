@@ -24,18 +24,20 @@ colourRow()
 
 // Saving to local storage
 let saveButtonEl = document.querySelectorAll('.saveBtn')
+let textAreaEl = document.querySelectorAll('.textArea')
 
 for (let i = 0; i < saveButtonEl.length; i++) {
-    // console.log(saveButton[i])
-    saveButtonEl[i].addEventListener('click', function() {
-        localStorage.getItem('User input')
-        console.log('test', this.previousSibling.children[0].value)
-        localStorage.setItem('User input', this.previousSibling.children[0].value)
-        
-    }
-    )
+    saveButtonEl[i].addEventListener('click', function () {
+        let userInput = this.previousSibling.children[0].value;
+        localStorage.setItem(this.previousSibling.id, userInput);
+    })
 }
 
-// local storage set item and get item 
-// how to add classes to elements with Jquery 
-// Save entered text in local storage 'on.click' - saveBtn
+function renderUserTextInput() {
+    for (let i = 9; i < 18; i++) {
+        let userInput = localStorage.getItem([i]);
+        document.getElementById([i]).children[0].value = userInput;
+    }
+}
+
+renderUserTextInput()

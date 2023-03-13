@@ -11,8 +11,12 @@ The scheduler has a colour code. For any row that is
 - Red, it means that is the current time so you should be working on the task in that row
 - Green, it means these are times in the future, so these are your upcoming tasks 
 
-## APIs
-I have used the moment.js API to display the current date and time to the user. This API is the main component  of the functionality of this webpage, which I have described in the previous section. 
+For each row, when a user writes their to-do it will save to local storage so that the user's input is persistent i.e. even if they close the browser window and revisit the page, their input will still display on-screen.
+
+At the end of each day (midnight) the local storage and existing text will clear so that the user as a fresh scheduler each day. 
+
+## Applications used
+I have used the moment.js API to display the current date and time to the user. This API is the main component of the functionality of this webpage, which I have described in the previous section. 
 
 
 

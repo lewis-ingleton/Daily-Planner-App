@@ -41,9 +41,15 @@ function renderUserTextInput() {
 }
 renderUserTextInput()
 
-function clearLocalStorage() {
-    if (currentHour === '0') {
-        localStorage.clear()
-    }
-}
+setInterval(
+    function clearLocalStorage() {
+        if (currentHour === '0') {
+            localStorage.clear()
+        }
+    }, 30 * 1000
+
+
+
+)
+
 clearLocalStorage()

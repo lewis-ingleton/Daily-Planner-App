@@ -47,9 +47,6 @@ setInterval(
             localStorage.clear()
         }
     }, 30 * 1000
-
-
-
 )
 
 clearLocalStorage()
